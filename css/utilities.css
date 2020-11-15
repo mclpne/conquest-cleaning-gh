@@ -9,7 +9,7 @@
     background-color: #fff;
     color: #333;
     border-radius: 3px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 10px;
 }
@@ -20,8 +20,9 @@
     cursor: pointer;
     background: var(--primary-color);
     color: #fff;
-    border: none;
+    border: 1px #333 solid;
     border-radius: 3px;
+    transition: all 0.3s;
 }
 
 .btn-outline {
@@ -30,39 +31,41 @@
 }
 
 .btn:hover {
-    transform: scale(.98);
+    background-color: #fff;
+    border: 1px #333 solid;
+    color: #333;
 }
 
 /* Backgrounds & colored buttons */
-.bg-primary, 
+.bg-primary,
 .btn-primary {
-    background-color: var(--primary-color);
+    background-color: #333;
     color: #fff;
 }
 
-.bg-secondary, 
+.bg-secondary,
 .btn-secondary {
     background-color: var(--secondary-color);
     color: #fff;
 }
 
-.bg-dark, 
+.bg-dark,
 .btn-dark {
     background-color: var(--dark-color);
     color: #fff;
 }
 
-.bg-light, 
+.bg-light,
 .btn-light {
     background-color: var(--light-color);
     color: #333;
 }
 
-.bg-primary a, 
+.bg-primary a,
 .btn-primary a,
-.bg-secondary a, 
+.bg-secondary a,
 .btn-secondary a,
-.bg-dark a, 
+.bg-dark a,
 .btn-dark a {
     color: #fff;
 }
@@ -138,7 +141,7 @@
 }
 
 .m-1 {
-    margin: 1rem ;
+    margin: 1rem;
 }
 
 .m-2 {
@@ -179,7 +182,7 @@
 }
 
 .p-1 {
-    padding: 1rem ;
+    padding: 1rem;
 }
 
 .p-2 {
