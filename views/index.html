@@ -9,8 +9,8 @@
             integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="css/utilities.css" />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="../css/utilities.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
         <title>Conquest Cleaning</title>
     </head>
     <body>
@@ -19,15 +19,8 @@
             <div class="navbar">
                 <div class="container flex">
                     <div class="logo">
-                        <img src="../images/logo.png" alt="logo" />
+                        <img src="../css/images/logo.png" alt="logo" />
                     </div>
-                    <!-- <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav> -->
                 </div>
             </div>
 
@@ -37,18 +30,17 @@
                     <div class="showcase-text">
                         <h1>Cleaning Done Right</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Incidunt fugiat dolorum libero, cupiditate
-                            nulla molestiae numquam iusto repellat eligendi!
+                            At Conquest Cleaning, we pledge to deliver the best results for your property using our safe and effective cleaning processes. Let's get started.
                         </p>
                     </div>
 
                     <div class="showcase-form card">
-                        <h2>Recieve a Quote</h2>
-                        <form>
+                        <h2>Get In Touch</h2>
+                        <form id="form">
                             <div class="form-control">
                                 <input
                                     type="text"
+                                    id="name"
                                     name="name"
                                     placeholder="Name"
                                     required
@@ -56,59 +48,58 @@
                             </div>
                             <div class="form-control">
                                 <input
-                                    type="phone"
-                                    name="phone"
-                                    placeholder="Phone Number"
-                                    required
-                                />
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Email Address"
+                                required
+                            />
                             </div>
                             <div class="form-control">
                                 <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="Email Address"
-                                    required
-                                />
+                                type="phone"
+                                id="phone"
+                                name="phone"
+                                placeholder="Phone Number"
+                            />
                             </div>
                             <div class="form-control">
                                 <input
                                     type="text"
-                                    name="phone"
+                                    id="text"
+                                    name="text"
                                     placeholder="What Needs Cleaning?"
                                     required
                                 />
                             </div>
-                            <!-- <div class="form-control">
-                        <textarea name="" id="" placeholder="What did you need cleaned?"></textarea>
-                    </div> -->
                             <input
                                 type="submit"
                                 value="Submit"
                                 class="btn btn-primary my-1"
                             />
+                            <div id="submitMessage" class="submit-message">
+                                <p>Form submitted. Thanks!</p>
+                            </div>
                         </form>
                     </div>
                 </div>
             </section>
         </div>
 
-        <!-- Stats -->
+        <!-- About -->
         <section class="about py-5">
             <div class="container">
                 <!-- <h3 class="stats-heading text-center my-1">
-                Welcome to the best platform for building applications of all types with modern architecture and scaling
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, repudiandae! Quisquam ipsum architecto deserunt animi.
             </h3> -->
-
                 <div class="grid grid-3 text-center my-4">
                     <div>
                         <i class="fas fa-map-marked-alt fa-3x"></i>
                         <h3>
-                            Locally Owned
-                            <span class="line-break">& Operated</span>
+                            Locally Operated
                         </h3>
-                        <p class="text-secondary">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Architecto, enim!
+                        <p>
+                            Receive the benefits of a big-name brand while supporting a local business.
                         </p>
                     </div>
                     <div>
@@ -117,9 +108,8 @@
                             Health &
                             <span class="line-break">Safety First</span>
                         </h3>
-                        <p class="text-secondary">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Suscipit, ipsa.
+                        <p>
+                            We use only the safest cleaning products for the people and pets in your life.
                         </p>
                     </div>
                     <div>
@@ -128,17 +118,19 @@
                             Satisfaction
                             <span class="line-break">Guaranteed</span>
                         </h3>
-                        <p class="text-secondary">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Suscipit, ipsa.
+                        <p>
+                            We're not happy until you are. We promise and guarantee 100% satisfaction.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- <div id="map"></div> -->
+
         <!-- Footer -->
-        <footer class="footer bg-dark py-2">
-            <div class="container grid grid-2">
+        <footer class="footer bg-dark">
+            <div class="container flex">
                 <div>
                     <h1>Conquest Cleaning</h1>
                     <p>
@@ -148,11 +140,45 @@
                         </script>
                     </p>
                 </div>
-                <div class="social">
-                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <div class="contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i><p>604-290-0010</p>
+                    </div>
+                    <div class="contact-item m-neg">
+                        <i class="fas fa-envelope"></i><p>info@conquestcleaning.ca</p>
+                    </div>
                 </div>
             </div>
         </footer>
+
+        <script src='../config.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $('form').on('submit', (e) => {
+                e.preventDefault();
+
+                const name = $('#name').val().trim();
+                const email = $('#email').val().trim();
+                const phone = $('#phone').val().trim();
+                const text = $('#text').val().trim();
+
+                const data = {
+                    name,
+                    email,
+                    phone,
+                    text
+                };
+
+                $.post('/email', data, function() {
+                    console.log('Server recieved data!');
+                });
+
+                $(submitMessage).css("display","inline-block");
+                $("#submitMessage").show();
+                $("#submitMessage").delay(4500).fadeOut();
+
+                $('#form')[0].reset();
+            });
+        </script>
     </body>
 </html>

@@ -160,6 +160,10 @@
     margin: 4rem;
 }
 
+.m-neg {
+    margin-top: -20px;
+}
+
 /* Padding */
 .py-1 {
     padding: 1rem 0;
