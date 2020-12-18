@@ -17,6 +17,7 @@ body {
     font-family: "Lato", sans-serif;
     color: #333;
     line-height: 1.6;
+    text-rendering: optimizeLegibility;
 }
 
 ul {
@@ -227,10 +228,6 @@ img {
     align-items: center;
 }
 
-.footer .contact p {
-    display: inline-block;
-}
-
 @media (max-width: 1038px) {
     .line-break {
         display: block;
@@ -289,7 +286,27 @@ img {
         gap: 0px;
     }
 
+    .about {
+        padding-bottom: 20px; 
+    }
+
+    .footer .flex {
+        flex-direction: column-reverse;
+    }
+
     .footer h1 {
         font-size: 17px;
+    }
+
+    .footer .contact {
+        padding-top: 10px;
+    }
+
+    .footer .copyright p {
+        display: inline-block;
+    }
+
+    .line-break {
+        display: block;
     }
 }

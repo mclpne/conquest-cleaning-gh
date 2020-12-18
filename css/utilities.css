@@ -23,6 +23,9 @@
     border: 1px #333 solid;
     border-radius: 3px;
     transition: all 0.3s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .btn-outline {
