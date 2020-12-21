@@ -290,6 +290,19 @@ img {
         padding-bottom: 20px; 
     }
 
+    .form {
+        position: relative;
+    }
+    .submit-message {
+        position: absolute;
+        text-align: center;
+        font-size: 14px;
+        padding: 0;
+        bottom: 24px;
+        right: 15px;
+        margin: auto
+    }
+
     .footer .flex {
         flex-direction: column-reverse;
     }
