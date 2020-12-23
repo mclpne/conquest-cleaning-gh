@@ -4,7 +4,7 @@ const sendMail = require('./mail.js');
 const app = express();
 const path = require('path');
 
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8080;
 
 app.use(express.urlencoded({
     extended: false
