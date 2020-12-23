@@ -1,4 +1,3 @@
-require('dotenv').config(); // try deleting this line? wtf knows
 const express = require('express');
 const sendMail = require('./mail.js');
 const app = express();
