@@ -3,8 +3,8 @@ const mailGun = require('nodemailer-mailgun-transport');
 
 const auth = {
     auth: {
-        api_key: 'key-98a6e81a7b2662418a05b32f1c610d5d',
-        domain: 'sandbox50f005d42ab24377b4a8da767419aae4.mailgun.org'
+        api_key: 'YOUR_KEY_HERE',
+        domain: 'YOUR_DOMAIN_HERE'
     }
 };
 
@@ -14,7 +14,7 @@ const sendMail = (name, email, phone, text, cb) => {
 
     const mailOptions = {
         from: email,
-        to: 'info@conquestcleaning.ca',
+        to: 'YOUR_EMAIL_HERE',
         subject: 'Contact Request',
         text: text,
         html: `<b>Name:</b> ${name}<br><br><b>Phone:</b> ${phone}<br><br>${text}`
